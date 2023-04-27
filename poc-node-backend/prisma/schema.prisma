@@ -17,3 +17,12 @@ model User {
   updatedAt DateTime @updatedAt
   username  String   @unique
 }
+
+model JsonForm {
+  createdAt      DateTime  @default(now())
+  id             String    @id @default(cuid())
+  jsonName       String?
+  newValues      Json?
+  originalValues Json?
+  updatedAt      DateTime? @updatedAt
+}

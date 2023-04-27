@@ -9,6 +9,10 @@ import { UserList } from "./user/UserList";
 import { UserCreate } from "./user/UserCreate";
 import { UserEdit } from "./user/UserEdit";
 import { UserShow } from "./user/UserShow";
+import { JsonFormList } from "./jsonForm/JsonFormList";
+import { JsonFormCreate } from "./jsonForm/JsonFormCreate";
+import { JsonFormEdit } from "./jsonForm/JsonFormEdit";
+import { JsonFormShow } from "./jsonForm/JsonFormShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -41,6 +45,13 @@ const App = (): React.ReactElement => {
           edit={UserEdit}
           create={UserCreate}
           show={UserShow}
+        />
+        <Resource
+          name="JsonForm"
+          list={JsonFormList}
+          edit={JsonFormEdit}
+          create={JsonFormCreate}
+          show={JsonFormShow}
         />
       </Admin>
     </div>
