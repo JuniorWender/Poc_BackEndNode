@@ -1,0 +1,3 @@
+[submodule "Poc_ReactJsonForm"]
+	path = Poc_ReactJsonForm
+	url = https://github.com/JuniorWender/Poc_ReactJsonForm.git
